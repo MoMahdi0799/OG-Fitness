@@ -1,104 +1,107 @@
-* {
-    margin: 0;
-    box-sizing: border-box;
-}
-
-html,
-body {
-    width: 100%;
-    height: 100%;
-    font-family: 'Jost', sans-serif;
-    font-size: large;
-    overflow-y: hidden;
-}
-
-a {
-    text-decoration: none;
-    color: #fff;
-}
-
-main {
-    width: 100%;
-    height: 100%;
-    display: grid;
-    place-items: center;
-}
-
-body {
-    background: rgb(255, 255, 255);
-    background: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(0, 0, 0, 1) 96%);
-}
-
-.parent {
-    width: 80%;
-    height: 70%;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1.6rem;
-}
-
-.parent>div {
-    width: 30%;
-    height: 50%;
-    background-color: #110092;
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.4);
-}
-
-header {
-    width: 100%;
-    position: absolute;
-    height: 55px;
-    background-color: rgba(0, 0, 0, 0.703);
-}
-
-.topnav {
-    width: 100%;
-    height: 100%;
-    background-color: transparent;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
-}
-
-.topnav a {
-    position: relative;
-    transition: 0.2s ease-in-out;
-}
-
-.topnav a::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 0;
-    height: 2px;
-    background-color: rgb(255, 255, 255);
-    transition: 0.2s ease-in-out;
-}
-
-.topnav a:hover::after {
-    width: 100%;
-}
-
-.topnav a:hover {
-    transform: translateX(-3px) translateY(-3px);
-}
-
-.topnav ul {
-    width: 100%;
-    height: 100%;
-    list-style-type: none;
-}
-
-.topnav li {
-    float: right;
-    width: 80px;
-    height: 100%;
-    display: grid;
-    place-items: center;
-    padding: 10px;
-    margin-right: 60px;
-}
+    * {
+        margin: 0;
+        box-sizing: border-box;
+    }
+    
+    html,
+    body {
+        width: 100%;
+        height: 100%;
+        font-family: 'Jost', sans-serif;
+        font-size: large;
+        overflow-y: hidden;
+    }
+    
+    a {
+        text-decoration: none;
+        color: #fff;
+    }
+    
+    main {
+        width: 100%;
+        height: 100%;
+        display: grid;
+        place-items: center;
+    }
+    
+    body {
+        background: rgb(114, 179, 255);
+        background: radial-gradient(circle, rgba(114, 179, 255, 1) 0%, rgba(7, 78, 255, 1) 100%);
+    }
+    
+    header {
+        width: 100%;
+        position: absolute;
+        height: 55px;
+        background-color: rgba(0, 0, 0, 0.703);
+    }
+    
+    .topnav {
+        width: 100%;
+        height: 100%;
+        background-color: transparent;
+        box-shadow: 0 0 10px rgba(0, 17, 110, 0.6);
+    }
+    
+    .topnav a {
+        position: relative;
+        transition: 0.2s ease-in-out;
+    }
+    
+    .topnav a::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 0;
+        height: 2px;
+        background-color: rgb(255, 255, 255);
+        transition: 0.2s ease-in-out;
+    }
+    
+    .topnav a:hover::after {
+        width: 100%;
+    }
+    
+    .topnav a:hover {
+        transform: translateX(-3px) translateY(-3px);
+    }
+    
+    .topnav ul {
+        width: 100%;
+        height: 100%;
+        list-style-type: none;
+    }
+    
+    .topnav li {
+        float: right;
+        width: 80px;
+        height: 100%;
+        display: grid;
+        place-items: center;
+        padding: 10px;
+        margin-right: 60px;
+    }
+    
+    .parent {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 780px;
+    }
+    
+    .row {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .item {
+        margin: 20px;
+        background-color: #3498db;
+    }
+    
+    div.desc {
+        padding: 15px;
+        text-align: center;
+    }
